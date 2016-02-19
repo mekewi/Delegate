@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Compelete Profile</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+          <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+          <link rel="stylesheet" type="text/css" href="./css/UnoDropZone.css">
+    <script src="./js/UnoDropZone.js"></script>
+    <script>
+        var MyObject = {
+            foo: function (uplaodCont) {
+                console.log('calling foo');
+                console.log('uplaodCont:');
+                console.log(uplaodCont);
+                $('#callbackmsg').html('Call MyObject.foo() function at:' + new Date())
+            }
+        };
+        $(document).ready(function () {
+            UnoDropZone.init();
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Complete Profile</h1>
+      </div>
+        
+        <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Complete Profile:</legend>
+
+<!-- Text input-->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="password">Profile Image</label>
+    <div class="row">
+          <div class="col-md-4">
+            <div class="file-upload" data-input-name="input1">
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="FirstName">First Name :</label>  
+  <div class="col-md-4">
+  <input id="FirstName" name="FirstName" type="text" placeholder="First Name" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="LastName">Last Name :</label>  
+  <div class="col-md-4">
+  <input id="LastName" name="LastName" type="text" placeholder="Last Name" class="form-control input-md" required="">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Gender">Gender :</label>  
+  <div class="col-md-4">
+      <select class="form-control" id="sel1">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+  </div>
+</div>
+
+    <div class="form-group">
+  <label class="col-md-4 control-label" for="BirthDate">BirthDate :</label>  
+  <div class="col-md-4">
+  <input id="BirthDate" name="BirthDate" type="date" placeholder="BirthDate" class="form-control input-md" required="">
+  </div>
+</div>
+
+    <div class="form-group">
+  <label class="col-md-4 control-label" for="Contacts">Contacts :</label>  
+  <div class="col-md-4">
+    <textarea class="form-control custom-control" rows="3" style="resize:none"></textarea>     
+  </div>
+</div>
+
+    <div class="form-group">
+  <label class="col-md-4 control-label" for="Location">Location :</label>  
+  <div class="col-md-4">
+    <textarea class="form-control custom-control" rows="3" style="resize:none"></textarea>     
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <button id="submit" name="submit" class="btn btn-primary">Compelete Profile</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+    </div>
+  </body>
+</html>
