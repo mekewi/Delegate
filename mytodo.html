@@ -20,7 +20,8 @@
 <style >
 nav ul{height:600px; width:100%;}
 nav ul{overflow:hidden; overflow-y:scroll;}
-    
+    .bootstrap-tagsinput .tag [data-role="remove"] { display: none; }
+    .bootstrap-tagsinput input { display: none; }
     </style>
 </head>
 <body>
@@ -43,7 +44,7 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                                     <label>To do</label>
                             </td>
                             <td>
-                                <input id="ToDo" name="To Do" type="text" placeholder="To Do" class="form-control input-md" required="" >
+                                <input id="ToDo" name="To Do" type="text" placeholder="To Do" class="form-control input-md" required="" readonly="readonly">
                             </td>
                             <td style="padding:15px">
                                 <label>Start Date</label>
@@ -61,17 +62,12 @@ nav ul{overflow:hidden; overflow-y:scroll;}
     <textarea class="form-control custom-control" rows="3" style="resize:none"></textarea>     
                             </td>
                             <td style="padding:15px">
-<div class="radio">
-  <label><input type="radio" name="optradio">Price</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio">Benefit</label>
-</div>
-
                             </td>
                             <td>
+                                  <label><input type="radio" name="optradio">Price</label>
+  <label><input type="radio" name="optradio">Benefit</label>
   <input id="ToDo" name="To Do" type="text" placeholder="To Do" class="form-control input-md" required="">
-  <input id="ToDo" name="To Do" type="text" placeholder="To Do" class="form-control input-md" required="">
+
                             </td>
 
                         </tr>
