@@ -6,3 +6,47 @@ body {
   text-align: center;
 }
 
+/* CSS used here will be applied after bootstrap.css */
+
+
+.notifications {
+   min-width:390px; 
+  }
+  
+  .notifications-wrapper {
+     overflow:auto;
+      max-height:200px;
+    }
+    
+ .menu-title {
+     color:#00a3cc;
+     font-size:1.2rem;
+      display:inline-block;
+      }
+ 
+   
+ .notification-heading, .notification-footer  {
+ 	padding:1px 10px;
+       }
+
+.item-title {
+ font-size:1.3rem;
+ color:#000;
+    
+}
+
+.notifications a.content {
+ text-decoration:none;
+ background:#e6e6e6;
+
+ }
+    
+.notification-item {
+ padding:5px;
+ margin:5px;
+ background:#e6e6e6;
+ border-radius:4px;
+ }
+
+
+
