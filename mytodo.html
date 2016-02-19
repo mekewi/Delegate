@@ -36,7 +36,6 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                     <i>Tags</i> - <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" readonly="readonly"/>
                 </div>
                                 <form class="form-horizontal">
-
                 <div class="panel-image">
                     <table>
                         <tr>
@@ -47,10 +46,11 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                                 <input id="ToDo" name="To Do" type="text" placeholder="To Do" class="form-control input-md" required="" readonly="readonly">
                             </td>
                             <td style="padding:15px">
-                                <label>Start Date</label>
+                                <label >Date:</label>
                             </td>
                             <td>
-                                <input type="datetime-local">
+                                                            <input id="date" name="date" type="datetime-local" class="form-control input-md" required="" readonly="readonly">
+
                             </td>
 
                         </tr>
@@ -59,14 +59,15 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                                     <label>Location </label>
                             </td>
                             <td>
-    <textarea class="form-control custom-control" rows="3" style="resize:none"></textarea>     
+    <textarea class="form-control custom-control" rows="3" style="resize:none" readonly></textarea>     
                             </td>
                             <td style="padding:15px">
+                <label><input type="radio" name="optradio" disabled checked>Price</label>
+  <label><input type="radio" name="optradio" disabled>Benefit</label>
+
                             </td>
                             <td>
-                                  <label><input type="radio" name="optradio">Price</label>
-  <label><input type="radio" name="optradio">Benefit</label>
-  <input id="ToDo" name="To Do" type="text" placeholder="To Do" class="form-control input-md" required="">
+  <input id="benefit" name="benefit" type="text" placeholder="" class="form-control input-md" required="" readonly>
 
                             </td>
 
@@ -76,10 +77,33 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                 </div>
                                     
         <div class="panel-footer clearfix">
-    <button id="submit" name="submit" class="btn btn-primary">Save</button>
+    <button id="submit" name="submit" class="btn btn-success">Finish</button>
     <button id="delete" name="delete" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ProviderList">Show Providers</button>
+
             <span class="toggler fa fa-chevron-down pull-right"></span>
         </div>
+                                    
+<div id="ProviderList" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
                 </form>
             </div>
         </div>
