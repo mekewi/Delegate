@@ -130,3 +130,5 @@ input[readonly] {
   background-color: white !important;
   cursor: text !important;
 }
+    ul.MyTodos .bootstrap-tagsinput .tag [data-role="remove"] { display: none; }
+    ul.MyTodos .bootstrap-tagsinput input { display: none; }
