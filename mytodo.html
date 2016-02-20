@@ -79,7 +79,7 @@ nav ul{overflow:hidden; overflow-y:scroll;}
         <div class="panel-footer clearfix">
     <button id="submit" name="submit" class="btn btn-success">Finish</button>
     <button id="delete" name="delete" class="btn btn-danger">Delete</button>
-            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ProviderList">Show Providers</button>
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ProviderList">Show Providers</button>
             <span class="toggler fa fa-chevron-down pull-right"></span>
         </div>
                                     
@@ -120,7 +120,8 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                 </td>   
                 <td style="padding:10px">
                 <h4>
-    <button id="submit" name="submit" class="btn btn-success">Accept</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#successMessage" data-dismiss="modal">Approve</button>
+
                 </h4>
                 </td>   
 
@@ -165,7 +166,7 @@ nav ul{overflow:hidden; overflow-y:scroll;}
                 </td>   
                 <td style="padding:10px">
                 <h4>
-    <button id="submit" name="submit" class="btn btn-success">Accept</button>
+    <button id="submit" name="submit" class="btn btn-success" >Accept</button>
                 </h4>
                 </td>   
 
@@ -224,8 +225,27 @@ nav ul{overflow:hidden; overflow-y:scroll;}
       </nav>
   </div>
 </div>
-
-                </form>
+            </form>
+<div id="successMessage" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+          <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Alert</h4>
+      </div>
+      <div class="modal-body">
+            <table style="width:100%;">
+            <tr>
+                <td>
+                                    <label name="EstimateTime" id="EstimateTime">Contacts have been shared. Please check your inbox</label>
+                </td> 
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+</div>
+                
             </div>
         </div>
 	</div>
