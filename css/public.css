@@ -126,6 +126,10 @@ body {
   cursor: inherit;
   display: block;
 }
+ul.notificationlist{
+        list-style-type: none;
+
+}
 input[readonly] {
   background-color: white !important;
   cursor: text !important;
